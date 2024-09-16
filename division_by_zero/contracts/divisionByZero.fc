@@ -1,0 +1,12 @@
+#include "imports/stdlib.fc";
+
+() recv_internal(int my_balance, int msg_value, cell in_msg_full, slice in_msg_body) impure {
+}
+
+int division_by_zero(int val1, int val2) method_id {
+    int a = val1;
+    int b = val2;
+    int c = val2;
+    c = a / b;
+    return c;
+}

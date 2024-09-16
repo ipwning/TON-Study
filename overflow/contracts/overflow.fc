@@ -1,0 +1,11 @@
+#include "imports/stdlib.fc";
+
+() recv_internal(int my_balance, int msg_value, cell in_msg_full, slice in_msg_body) impure {
+}
+
+int overflow(int val) method_id {
+    int a = 115792089237316195423570985008687907853269984665640564039457584007913129639935;
+    int b = a + val;
+
+    return b;
+}
